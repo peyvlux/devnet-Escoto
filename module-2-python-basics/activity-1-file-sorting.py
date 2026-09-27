@@ -1,51 +1,55 @@
 """
-Module 2 — Activity: File Sorting with os and shutil
-Student: [your name]
-Date: [date]
+Module 2 — Activity 1: File Sorting
+Student: Jazper Escoto
+Date: September 28, 2026
 
 ============================================
-WHAT DID YOU BUILD? (explain in your own words)
-============================================
-[Paste your working script below first, then come back and explain
-it here: what does your script do, and what rule did you use to
-sort the files? e.g. by extension, by name, by date, etc.]
+WHAT IS THIS ACTIVITY?
+======================
 
-
-============================================
-KEY VOCABULARY
-============================================
-- os module:
-- shutil module:
-- file path:
-- directory:
-(add more as needed)
-
+This activity is about sorting files into different
+categories based on their file extensions. It helps
+organize files and makes them easier to find.
 
 ============================================
-YOUR SCRIPT
+WHAT I LEARNED
+==============
+
+I learned that Python can check a file's extension and
+use conditions to decide where the file should go.
+I also learned how strings and if statements can be
+used to handle different file types.
+
 ============================================
-Paste the code you already wrote for this activity below.
+MY OWN EXAMPLE
+==============
+
 """
 
-import os
-import shutil
+filename = "assignment.py"
 
-# --- paste your existing code here ---
+if filename.endswith(".py"):
+print("This is a Python file.")
+elif filename.endswith(".txt"):
+print("This is a text file.")
+elif filename.endswith(".jpg") or filename.endswith(".png"):
+print("This is an image file.")
+else:
+print("Unknown file type.")
 
+# """
 
-"""
-============================================
-A MISTAKE I MADE (or one I want to avoid)
-============================================
-[what tripped you up while building this? e.g. a path that didn't
-exist, a file that got overwritten, something that didn't work the
-way you expected at first]
+# A MISTAKE I MADE (or one I want to avoid)
 
+One mistake I want to avoid is checking the wrong file
+extension. I also need to remember that the extension
+must be written correctly, such as ".py" for Python files.
 
 ============================================
 HOW THIS CONNECTS TO SOMETHING ELSE
-============================================
-[optional: how is this similar to what real automation scripts do?
-think about your own gradebook/attendance workflow — could something
-like this save you time there?]
+===================================
+
+File sorting connects to control flow because the program
+uses if, elif, and else to decide how to handle different
+types of files.
 """
