@@ -1,5 +1,6 @@
 import random
 import requests
+<<<<<<< HEAD
 
 pokemon_list = ["pikachu", "bulbasaur", "charizard", "greninja", "lucario"]
 
@@ -28,6 +29,23 @@ if response.status_code == 200:
             break
         else:
             print("Wrong guess!")
+=======
+ 
+POKEMON_LIST = ["pikachu", "bulbasaur", "charizard", "greninja", "lucario"]
+ 
+ 
+def fetch_pokemon_data(pokemon_name):
+  """Fetches Pokémon data from PokeAPI with error handling."""
+  url = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name.lower()}"
+  try:
+    response = requests.get(url, timeout=5)
+ 
+    if response.status_code == 200:
+      return response.json()
+    elif response.status_code == 404:
+      print(f"Error: Pokémon '{pokemon_name}' not found.")
+      return None
+>>>>>>> a023d8e (Update files before push)
     else:
         print("Game Over!")
         print("Pokemon was :", answer)
